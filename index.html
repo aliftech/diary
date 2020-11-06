@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-framework="angularjs">
+	<head>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="node_modules/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+		
+		<title>MyDiay</title>
+		
+	</head>
+	<body>
+
+		<div ng-app="diary" ng-controller="diaryCTRL" layout="column">
+		
+			
+			<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+			  <div class="container-fluid">
+				<a class="navbar-brand text-white" href="#/!">{{title}}</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				  <div class="navbar-nav ml-auto">
+					<a class="nav-link text-white" href="#!baca">Baca</a>
+					<a class="nav-link text-white" href="#!tulis">Tulis</a>
+				  </div>
+				</div>
+			  </div>
+			</nav>
+			
+			<div ng-view></div>
+			 
+		
+		</div>
+
+		
+		<script src="node_modules/angular/angular.js"></script>
+		<script src="node_modules/angular-route/angular-route.js"></script>
+		<script src="node_modules/angular-material/angular-material.min.js"></script>
+		<script src="app.js"></script>
+		<script src="diaryCTRL.js"></script>
+		<script src="contentCTRL.js"></script>
+		<script src="node_modules/bootstrap/js/bootstrap.min.js"></script>
+		
+
+	</body>
+</html>

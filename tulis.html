@@ -1,0 +1,40 @@
+<div class="row">
+
+	<div class="col-md-6 ml-auto mr-auto">
+	
+		<div class="card mt-5">
+		  <div class="card-body">
+			<h5 class="card-title">Tulis Diary</h5>
+			
+			<div class="container">
+			
+				<div class="mb-3 mt-3">
+				  <label class="form-label">Judul Diary</label>
+				  <input type="text" ng-model="diary.judul" class="form-control" placeholder="Judul Diary">
+				</div>
+				
+				<div class="mb-3 mt-3">
+				  <label class="form-label">Waktu Penulisan</label>
+				  <input type="date" ng-model="diary.waktu" class="form-control">
+				</div>
+				
+				<div class="mb-3 mt-3">
+				  <label class="form-label">Isi Diary</label>
+				  <textarea ng-model="diary.isi" class="form-control" placeholder="Tulis pengalaman anda...."></textarea>
+				</div>
+				
+				<div class="text-center mt-3 mb-3">
+					
+					<button type="button" ng-click="tambahData()" class="btn btn-outline-primary">Simpan</button>
+					
+				</div>
+			
+			</div>
+			
+			
+		  </div>
+		</div>
+	
+	</div>
+
+</div>
